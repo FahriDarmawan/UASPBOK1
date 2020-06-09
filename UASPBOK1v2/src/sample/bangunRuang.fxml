@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="bdPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="706.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.bangunDatarController">
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="43.0" prefWidth="100.0" style="-fx-background-color: #404040; -fx-text-fill: #f0f0f0;" text="Choose :">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#persegi" onMouseClicked="#persegi" prefHeight="43.0" prefWidth="104.0" style="-fx-text-fill: #3f3f3f;" text="Kubus" textFill="#3f3f3f">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#lingkaran" prefHeight="43.0" prefWidth="104.0" style="-fx-text-fill: #3f3f3f;" text="Balok">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#segitiga" prefHeight="43.0" prefWidth="104.0" style="-fx-text-fill: #3f3f3f;" text="Tabung">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#segitiga" prefHeight="43.0" prefWidth="104.0" style="-fx-text-fill: #3f3f3f;" text="Kerucut">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#segitiga" prefHeight="43.0" prefWidth="104.0" style="-fx-text-fill: #3f3f3f;" text="Bola">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <ImageView fx:id="home" fitHeight="43.0" fitWidth="46.0" nodeOrientation="INHERIT" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home-button-icon-29.jpg" />
+               </image>
+               <VBox.margin>
+                  <Insets left="25.0" top="110.0" />
+               </VBox.margin>
+            </ImageView>
+         </children>
+         <BorderPane.margin>
+            <Insets right="3.0" />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <top>
+      <HBox prefHeight="49.0" prefWidth="706.0" style="-fx-background-color: #303030;" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="49.0" prefWidth="700.0" style="-fx-text-fill: #f0f0f0;" text="Bangun Ruang" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="exit" fitHeight="37.0" fitWidth="37.0" onMouseClicked="#exitButtonOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@exit.png" />
+               </image>
+               <HBox.margin>
+                  <Insets right="10.0" top="5.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: grey;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

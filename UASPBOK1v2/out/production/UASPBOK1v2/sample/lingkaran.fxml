@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="361.0" prefWidth="604.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.bangunDatarController">
+   <children>
+      <Label layoutX="165.0" layoutY="78.0" style="-fx-text-fill: #f0f0f0;" text="Jari-Jari ( cm )">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="jariField" layoutX="290.0" layoutY="76.0" />
+      <Button fx:id="hitungLuasButton" layoutX="165.0" layoutY="147.0" mnemonicParsing="false" onAction="#hitungLuasLingkaranOnAction" prefHeight="25.0" prefWidth="113.0" text="Hitung Luas" />
+      <Button fx:id="hitungKelilingButton" layoutX="326.0" layoutY="147.0" mnemonicParsing="false" onAction="#hitungKelilingLingkaranOnAction" prefHeight="25.0" prefWidth="113.0" text="Hitung Keliling" />
+      <Label layoutX="288.0" layoutY="189.0" style="-fx-text-fill: #f0f0f0;" text="Hasil">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="resultTextField" layoutX="167.0" layoutY="222.0" prefHeight="64.0" prefWidth="273.0" />
+   </children>
+</Pane>

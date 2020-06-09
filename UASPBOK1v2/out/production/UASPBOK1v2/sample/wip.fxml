@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="436.0" prefWidth="706.0" style="-fx-background-color: #303030;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.bangunDatarController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="211.0" layoutY="267.0" text="COMING SOON !" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="exit" fitHeight="64.0" fitWidth="64.0" layoutX="615.0" layoutY="345.0" onDragDetected="#exitButtonOnAction" onMouseClicked="#exitButtonOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@exit.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="271.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@wip.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="home" fitHeight="64.0" fitWidth="64.0" layoutX="543.0" layoutY="345.0" onMouseClicked="#homeButtonOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@home-button-icon-29.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
